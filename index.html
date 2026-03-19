@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razorpay Clone</title>
+    <title>Razorpay</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
-    <div class="overflow-x-hidden relative">
+    <div class="overflow-x-hidden">
     <!--Navbar-->
     <nav class="bg-deepBlue">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between">
@@ -106,45 +107,57 @@
                 <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
 
             <!--content-box-->
-            <div>
+            <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12">
                 <!--left-section-->
-                <div>
-                    <h3>Supercharge your business with the all‑powerful</h3>
-                    <span class="text-lightBlue">Payment Gateway</span>
-                    <ul>
-                        <li>
+                <div class="felx flex-col justify-between items-center w-full space-y-12">
+                    <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">
+                        Supercharge your business with the all‑powerful
+                        <span class="text-lightBlue">Payment Gateway</span>
+                    </h3>
+                    
+                    <ul class="space-y-2">
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>100+ Payment Methods</span>
                         </li>
-                        <li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>Industry Leading Success Rate</span>
                         </li>
-                        <li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>Superior Checkout Experience</span>
                         </li>
-                        <li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>Easy to Integrate</span>
                         </li>
-                        <li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>Instant Settlements from day 1</span>
                         </li>
-                        <li>
+                        <li class="font-mullish flex items-center space-x-2">
+                            <i data-feather="check" class="text-greenLight"></i>
                             <span>In-depth Reporting and Insights</span>
                         </li>
                     </ul>
 
                 <!--for button and hyperlink-->
-                <div>
-                    <button>Sign Up Now</button>
+                <div class="flex flex-row items-center space-x-4">
+                    <button class="bg-lightBlue w-fit text-white py-[14px] px-[10px] rounded-md font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200">Sign Up Now</button>
                     <!--hyperlink-->
-                    <div>
-                        <a href="">Know More</a>
-                        <i></i>
+                    <div class="flex items-center cursor-pointer group py-[14px] px-[10px]">
+                        <a href="#" 
+                        class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"    
+                        >Know More</a>
+                        <i data-feather="chevron-right" class="w-4 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                     </div>
                 </div>
 
                 </div>
 
-                <img src="./images/payment-suite.png" alt="">
+                <img src="./images/payment-suite.png" alt=""
+                class="max-w-[400px]">
 
             </div>
 
@@ -152,5 +165,10 @@
     </section> 
 
     </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+    feather.replace();
+    </script>
 </body>
 </html>
