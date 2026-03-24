@@ -13,6 +13,19 @@
             padding-top: 3rem;
             padding-bottom: 5rem;
         }
+
+        .companiesList{
+            animation:10s infinite linear moveCompany;
+        }
+
+        @keyframes moveCompany{
+            0%{
+                top: 0;
+            }
+            100%{
+                top: -50%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -884,9 +897,9 @@
     </section>
 
 <!--join razorpay section-->
-    <section class="bg-[#f5f8fe] relative pt-40 pb-12">
+    <section class="bg-[#f5f8fe] relative pt-20 pb-12">
 
-        <div class="w-11/12 max-w-[1080px] mx-auto relative">
+        <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
 
             <!--left part-->
             <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
@@ -897,8 +910,9 @@
             </div>
 
             <!--right part-->
-            <div>
-                <img src="https://vanoop218184.github.io/RazorPay_clone/images/comanies.png" alt="companies">
+            <div class="h-[500px] w-[500px] relative overflow-y-hidden">
+                <img src="https://vanoop218184.github.io/RazorPay_clone/images/comanies.png" alt="companies" width="500px"
+                class="absolute h-auto object-cover moveImage companiesList">
             </div>
 
         </div>
