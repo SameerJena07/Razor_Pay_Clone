@@ -195,7 +195,7 @@
             </div>
 
             <!--Card-Box-->
-            <div class="w-full grid grid-cols-3 gap-4 mt-10">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
 
             <!--Box-1-->
                 <div class="w-full min-h-[15rem] relative cursor-pointer">
@@ -529,8 +529,8 @@
                     </ul>
 
                 <!--for button and hyperlink-->
-                <div class="flex flex-row w-full items-center space-x-4">
-                    <button class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
+                <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4">
+                    <button class="relative bg-lightBlue flex items-center place-content-center md:justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 self-stretch md:w-fit">
                         Sign Up
                         <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
                             <!--Arrow-->
@@ -557,11 +557,11 @@
 
                 <!--background image for content-box 2-->
                 <img src="./images/banking-business.png" alt=""
-                class="max-w-[600px] absolute right-0 bottom-0 z-4">
+                class="max-w-[600px] absolute right-0 bottom-0 z-4 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
                 </div>
 
                 <!--card-box-->
-                <div class="grid grid-cols-3 w-full gap-4 my-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
                     <!--box1-->
                     <div
                         class="w-full min-h-[15rem] relative cursor-pointer featureCard2"
@@ -718,7 +718,7 @@
                 </div>
 
                 <!--demo-Box-->
-                <div class="w-full flex flex-row items-center justify-evenly border border-slate-400 mb-24 gap-y-6 p-8 relative rounded-md bg-blue-800">
+                <div class="w-full items-center justify-evenly border border-slate-400 mb-24 gap-y-6 p-8 relative rounded-md bg-blue-800 hidden md:flex md:flex-col lg:flex-row lg:flex">
                     <p class="font-mullish text-white text-xl">Check out the live demo to learn how RazorpayX works.
                         <span class="font-bold">No sign-up required!</span>
                     </p>
